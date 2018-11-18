@@ -1,91 +1,68 @@
 #include<iostream>
 using namespace std;
 
-
-int binary(int a[],int n,int m,int l,int u)
+int main()
 {
-    int mid,c=0;
+    cout<<"       +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
+    cout<<"                                     BINARY      SEARCH                             \n";
+    cout<<"       +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
 
-    if(l<=u)
-    {
-        mid=(l+u)/2;
-            if(m==a[mid])
+
+
+	int n,i,num[500],a,flag,m;
+
+		cout<<"Enter the number of terms of array :--";
+
+
+	while(!(cin>>n)|| (n<0))
+        {
+            cin.clear();
+	    cin.ignore(100,'\n');
+	    cout<<"INVALID INPUT. ENTER AGAIN:";
+        }
+
+	cout<<"Enter the terms of Array : "<<endl;
+
+		for(i=0;i<n;i++)
+		   {
+		       cin>>num[i];
+		   }
+cout<<"      ================================================================================\n";
+
+    cout<<"\n\nEnter the element you want to search :- ";
+    while(!(cin>>a)|| (a<0))
+        {
+            cin.clear();
+	    cin.ignore(100,'\n');
+	    cout<<"   INVALID INPUT. ENTER AGAIN  :-- ";
+        }
+int first=0;
+int last = n-1;
+int middle =(first+last)/2;
+
+cout<<"========================================================================================\n\n";
+
+    while(first<=last)
+        {
+            if (num[middle] < a)
             {
-                c=1;
+                first = middle + 1;
             }
-            else if(m<a[mid])
+            else if (num[middle] == a)
             {
-                return binary(a,n,m,l,mid-1);
+                cout<< "               Element Found at Location "<<middle+1<<"\n";
+                break;
             }
             else
             {
-                return binary(a,n,m,mid+1,u);
+                last =middle-1;
             }
-    }
-    else
-    {
-        return c;
-    }
-}
-
-
-int main()
-
-{
-      cout<<"\n\t\t\t\t\tBINARY SEARCH USING RECURSION  \n";
-        cout<<"\t\t\t====================================================================\n";
-
-
-    int a[40],i,n,m,c,l,u;
-    cout<<"ENTER THE SIZE OF THE ARRAY :- ";
-    while(!(cin>>n)|| (n<=0))
+            middle = (first + last)/2;
+        }
+        if(first > last)
         {
-            cin.clear();
-            cin.ignore(100,'\n');
-            cout<<"    !!!!!    INVALID INPUT. ENTER AGAIN :-- ";
+            cout<<"\n\n             NOT FOUND \n";
 
         }
-
-    cout<<"ENTER THE ELEMENTS OF THE ARRAY :--\n";
-    for(i=0;i<n;i++)
-    {
-        cin>>a[i];
-    }
-
-    cout<<"\n\n THE ARRAY YOU ENTERED IS:--\n";
-    for(i=0;i<n;i++)
-    {
-        cout<<a[i]<<" ";
-    }
-
-    cout<<"\n\nENTER THE NUMBER YOU WANT TO SEARCH:--";
-    while(!(cin>>m)|| (m<0))
-        {
-            cin.clear();
-            cin.ignore(100,'\n');
-            cout<<"    !!!!!    INVALID INPUT. ENTER AGAIN :-- ";
-
-        }
-
-    l=0,u=n-1;
-    c=binary(a,n,m,l,u);
-
-    if(c==0)
-    {
-        cout<<"\n**************************************\n";
-        cout<<"\n\t NUMBER NOT FOUND \n";
-        cout<<"\n**************************************\n";
-    }
-    else
-    {
-        cout<<"\n**************************************\n";
-        cout<<"\n\t";
-        1
-        26NUMBER FOUND\n";
-        cout<<"\n**************************************\n";
-
-    }
-    return 0;
-
+ cout<<"\n========================================================================================\n\n";
 }
-
