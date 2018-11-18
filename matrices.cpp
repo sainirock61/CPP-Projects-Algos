@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-int i,j,a,z,n,m,num[50][50],mat[50][50],add[50][50],sub[50][50],prod[50][50],p,q,transpose[50][50],trans[50][50];
+int i,j,a,z,n,m,num[50][50],mat[50][50],add[50][50],sub[50][50],prod[50][50],p,q;
 
 cout<<"\nENTER ORDER OF FIRST MATRIX:--\n ";
 
@@ -77,9 +77,9 @@ cout<<"\n                            ::::::::::::::::::::::::::::  Menu Driven P
         cout<<"                  _________________________________________________________________________________________________________          \n";
         cout<<"                 |***********************************************************************************************************|       \n";
         cout<<"                 |*                                                                                                         *|       \n";
-        cout<<"                 |*        1.ADDITION OF THE GIVEN MATRICES          2.SUBTRACTION OF THE GIVEN MATRICES                    *|       \n";
+        cout<<"                 |*          1.ADDITION OF THE GIVEN MATRICES        2.SUBTRACTION OF THE GIVEN MATRICES                    *|       \n";
         cout<<"                 |*                                                                                                         *|       \n";
-        cout<<"                 |*        3.MULTIPLICATION OF THE GIVEN MATRICES    4.TRANSPOSE OF THE MATRICES                            *|       \n";
+        cout<<"                 |*          3.MULTIPLICATION OF THE GIVEN MATRICES                                                         *|       \n";
         cout<<"                 |*_________________________________________________________________________________________________________*|        \n\n";
 
         cout<<"                     Choose the operation(1-3):-- ";
@@ -165,8 +165,8 @@ cout<<"\n=======================================================================
 
 if(m==p)
   {
-    int sum=0;
-    cout<<"         PRODUCT OF THE ABOVE MATRICES IS :-- \n";
+int sum=0;
+cout<<"         PRODUCT OF THE ABOVE MATRICES IS :-- \n";
 
         for(int c=0;c<n;c++)
         {
@@ -194,52 +194,6 @@ if(m==p)
    {
        cout<<"\n!!!!    PLEASE ENTER THE APPROPRIATE DIMENSIONS TO MULTIPLY THE MATRICES   !!!!\n";
    }
-}
-else if(a==4)
-{
-    cout<<"\n===========================================================================================\n";
-    cout<<"\nTRANSPOSE OF THE GIVEN MATRICES ARE :-- \n";
-
-        for(i=0;i<n;i++)
-            {
-                for(j=0;j<m;j++)
-                    {
-                        transpose[j][i]=num[i][j];
-                    }
-            }
-        for(i=0;i<p;i++)
-            {
-                for(j=0;j<q;j++)
-                    {
-                        trans[j][i]=mat[i][j];
-                    }
-            }
-
-        for(i=0;i<m;i++)
-            {
-                cout<<" \n";
-                for(j=0;j<n;j++)
-                    {
-                        cout<<transpose[i][j]<<"  ";
-                    }
-            }
-         cout<<"\n\n";
-        for(i=0;i<q;i++)
-            {
-                cout<<" \n";
-                for(j=0;j<p;j++)
-                    {
-                        cout<<trans[i][j]<<"  ";
-                    }
-            }
-
-
-
-
-
-
-
-
 }
 else
     {
