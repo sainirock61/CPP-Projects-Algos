@@ -99,7 +99,18 @@ int main(int argc,char *argv[])
     }
     system("pause");
     return 0;
+	  static int alphabet[26];
+    int x;
+    cout<<"\n\nCommand-Line Arguement\n";
+    for(int i=0;i<argc;i++)
+    {
 }
+
+col-md-6 col-lg-6">
+            <div class="about-item">
+              <img class="img-fluid" src="assets/img/about/img2.jpg" alt="">
+              <div class="about-text">
+=======
 for(int i=0;i<str.length();i++)
     {
         if(str[i]>='A' && str[i]<='Z')
