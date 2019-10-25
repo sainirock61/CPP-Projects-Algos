@@ -13,6 +13,20 @@ class triangle
 		{
 			a=x;
 			b=y;
+			c=z;      equality operator.*/
+
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+class triangle
+{
+		int a, b, c;
+	public:	
+		triangle(int x, int y, int z)  //parameterized constructor
+		{
+			a=x;
+			b=y;
 			c=z;
 			cout<<"\n NEW TRIANGLE CREATED! ";
 		}
