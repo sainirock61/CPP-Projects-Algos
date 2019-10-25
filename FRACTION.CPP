@@ -288,3 +288,10 @@ Fraction::Fraction(const Fraction& fr2)//copy constructor
 }
 Fractions.cpp
 Displaying Fractions.cpp.
+	
+	{
+    numerator=fr2.numerator;
+    denominator=fr2.denominator;
+}
+Fractions.cpp
+Displaying Fractions.cpp.
