@@ -83,6 +83,7 @@ public:
     {
         numerator+=denominator;
         reduce();
+	    cout<<"changed";
     }
     void addTo(Fraction fr)
     {
