@@ -21,15 +21,7 @@ class box
 			l=b=h=1;
 			cout<<"\n\n NEW BOX CREATED! ";
 		}
-		void set()  //to set values of length, breadth and height
-		{
-			cout<<"\n Enter length: ";
-			cin>>l;
-			cout<<" Enter breadth: ";
-			cin>>b;
-			cout<<" Enter height: ";
-			cin>>h;
-		}
+	
 		float surface_area()  //to calculate surface area
 		{
 			return 2*(l*b+b*h+h*l);
@@ -85,6 +77,15 @@ class box
 				cout<<"\n Box created is a cube.";
 			else
 				cout<<"\n Box created is a cuboid.";
+		}
+		void set()  //to set values of length, breadth and height
+		{
+			cout<<"\n Enter l: ";
+			cin>>l;
+			cout<<" Enter b: ";
+			cin>>b;
+			cout<<" Enter h: ";
+			cin>>h;
 		}
 		void print()
 		{
