@@ -13,6 +13,20 @@ class triangle
 		{
 			a=x;
 			b=y;
+			c=z;      equality operator.*/
+
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+class triangle
+{
+		int a, b, c;
+	public:	
+		triangle(int x, int y, int z)  //parameterized constructor
+		{
+			a=x;
+			b=y;
 			c=z;
 			cout<<"\n NEW TRIANGLE CREATED! ";
 		}
@@ -59,3 +73,54 @@ int main()
 	system("pause");
     return 0;
 }
+int main()
+{
+    system("color f3");
+	triangle eq(5,5,5);
+	eq.print();
+	cout<<"\n Area: "<<eq.area()<<endl;
+	triangle rt(8,6,10);
+	rt.print();
+	cout<<"\n Area: "<<rt.area(8,6)<<endl;
+	eq=rt;                                         //sides of eq=sides of rt
+	cout<<"\n New Values for sides of the first triangle: ";
+	eq.print();
+	if(eq == rt)
+		cout<<"\n\n Triangles 1 and 2 are equal.";
+	system("pause");
+    return 0;
+}int main()
+{
+    system("color f3");
+	triangle eq(5,5,5);
+	eq.print();
+	cout<<"\n Area: "<<eq.area()<<endl;
+	triangle rt(8,6,10);
+	rt.print();
+	cout<<"\n Area: "<<rt.area(8,6)<<endl;
+	eq=rt;                                         //sides of eq=sides of rt
+	cout<<"\n New Values for sides of the first triangle: ";
+	eq.print();
+	if(eq == rt)
+		cout<<"\n\n Triangles 1 and 2 are equal.";
+	system("pause");
+    return 0;
+}
+int main()
+{
+    system("color f3");
+	triangle eq(5,5,5);
+	eq.print();
+	cout<<"\n Area: "<<eq.area()<<endl;
+	triangle rt(8,6,10);
+	rt.print();
+	cout<<"\n Area: "<<rt.area(8,6)<<endl;
+	eq=rt;                                         //sides of eq=sides of rt
+	cout<<"\n New Values for sides of the first triangle: ";
+	eq.print();
+	if(eq == rt)
+		cout<<"\n\n Triangles 1 and 2 are equal.";
+	system("pause");
+    return 0;
+}
+
