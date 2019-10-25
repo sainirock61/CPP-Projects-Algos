@@ -2,43 +2,48 @@
 
 using namespace std;
 
-void fibonacci(int n)
+void main()
 {
-   static int n1=0,n2=1,n3;
+	 clrscr();
 
-    if(n>0)
-    {
-        n3 = n1+ n2;
-        n1 = n2;
-        n2 = n3;
+	int *a,*b,*temp;
+	cout<<"\n Enter value of a:- ";
+	cin>>*a;
+
+	cout<<"\n Enter value of b:- ";
+	cin>>*b;
 
 
-        cout<<n3<<" ";
+	*temp=*a;
+	*a=*b;
+	*b=*temp;
+    cout<<"\n\n_____________________________________________________________________________";
+	    cout<<"\n\t After swaping value or a ="<<*a<<" and of b ="<<*b<<"\n";
+    cout<<"_____________________________________________________________________________";
 
-        fibonacci(n-1);
-
-    }	var $marker_url = ( is_internetExplorer11 ) ? 'assets/img/location.png' : 'assets/img/location.png';
-		
-	//define the basic color of your map, plus a value for saturation and brightness
-	var	$main_color = '#2d313f',
-		$saturation= -20,
-		$brightness= 5;
-
-	//we define here the style of the map
-	var style= [ 
-		{	var $marker_url = ( is_internetExplorer11 ) ? 'assets/img/location.png' : 'assets/img/location.png';
-		
-	//define the basic color of your map, plus a value for saturation and brightness
-	var	$main_color = '#2d313f',
-		$saturation= -20,
-		$brightness= 5;
-
-	//we define here the style of the map
-	var style= [ 
-		{
-
+	getch();
 }
+oid main()
+{
+	 clrscr();
 
+	int *a,*b,*temp;
+	cout<<"\n Enter value of a:- ";
+	cin>>*a;
+
+	cout<<"\n Enter value of b:- ";
+	cin>>*b;
+
+
+	*temp=*a;
+	*a=*b;
+	*b=*temp;
+    cout<<"\n\n_____________________________________________________________________________";
+	    cout<<"\n\t After swaping value or a ="<<*a<<" and of b ="<<*b<<"\n";
+    cout<<"_____________________________________________________________________________";
+
+	getch();
+}
 int main()
 {
 cout<<"\n====================================================================\n";
@@ -60,3 +65,12 @@ cout<<"\n====================================================================\n"
         return 0;
 
 }
+		    cout<<"ENTER THE NUMBER OF TERMS OF THE FIBONACCI SERIES :-- ";
+    while(!(cin>>n)|| (n<=0))
+        {
+            cin.clear();
+            cin.ignore(100,'\n');
+            cout<<"    !!!!!    INVALID INPUT. ENTER AGAIN :-- ";
+
+        }
+
