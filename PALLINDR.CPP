@@ -93,3 +93,26 @@ void palindrome(char a[20])
     else
     cout<<"String is palindrome";
 }
+
+
+#include<iostream.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<stdio.h>
+#include<string.h>
+void palindrome(char []);
+int main()
+{
+
+    char n[20];
+	
+#include<iostream.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<stdio.h>
+#include<string.h>
+void palindrome(char []);
+int main()
+{
+
+    char n[20
