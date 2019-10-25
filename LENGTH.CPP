@@ -10,6 +10,7 @@ void drawline()
 {
     cout<<"\n"<<setfill('-')<<setw(80)<<"-";
     cout<<setfill(' ');
+    cout<<"erroe";
 }
 
 class Length
@@ -144,3 +145,15 @@ Length Length::operator-(Length L2)
     }
     return L3;
 }
+Length Length::operator-(Length L2)
+{
+    Length L3;
+    L3.feet=0;
+    L3.inch=0;
+    L3.feet=feet-L2.feet;
+    L3.inch=inch-L2.inch;
+    if(L3.inch<0)
+    {
+        L3.inch+=12;
+        L3.feet-=1;
+    }

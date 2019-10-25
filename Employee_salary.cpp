@@ -4,12 +4,6 @@
 
 using namespace std;
 
-struct student
-{
-  int empid,basic,hra,da,ext;
-  char nm[20];
-};
-
 int main()
 {
  fstream obj;

@@ -22,4 +22,11 @@ cout<<i<<"\n";
 }
 }
 }
-
+    
+while(!(cin>>n) || (n<=0))
+{
+    cin.clear();
+    cin.ignore(100,'\n');
+    cout<<"'INVALID INPUT! ENTER A POSITIVE NUMBER:"<<" ";
+}
+    
