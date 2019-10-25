@@ -10,6 +10,7 @@ void drawline()
 {
     cout<<"\n"<<setfill('-')<<setw(80)<<"-";
     cout<<setfill(' ');
+    cout<<"erroe";
 }
 
 class Length
