@@ -4,13 +4,7 @@
 #include<cstdlib>
 using namespace std;
 
-bool getEmp(ifstream &infil,char a[],char b[],int& c,int& d,int& e,int& f)
-{
-    infil>>a>>b>>c>>d>>e>>f;
-    if(!infil)
-        return false;
-    return true;
-}
+
 int main()
 {
     ifstream employeeData;
