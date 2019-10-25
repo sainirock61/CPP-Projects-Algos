@@ -6,6 +6,7 @@ int main()
     cout<<"       +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
     cout<<"                                     LINEAR      SEARCH                             \n";
     cout<<"       +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
+	cout<<"Extereme";
 	int n,i,num[500],a,flag,m;
 
 		cout<<"Enter the number of terms of array :--";

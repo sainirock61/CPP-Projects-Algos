@@ -6,6 +6,7 @@ int main()
 int n,even=0,odd=0;
 float i,sum=0;
 int no;
+    cout<<"menu";
 cout<<"Write a menu driven program to compute the sum of first n terms of the following series\n";
 cout<<"\n";
 cout<<"      1.1-2+3-4+5-6+7-8.....\n";
