@@ -3,6 +3,7 @@ using namespace std;
 int main()
 {
 int n,i,j,count;
+ cout<<"New program";
 cout<<"Program to print all prime number less than n\n";
 cout<<"\n";
 cout<<"\n";

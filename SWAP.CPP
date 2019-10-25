@@ -22,9 +22,3 @@ void main()
 
 	getch();
 }
-int *a,*b,*temp;
-	cout<<"\n Enter value of first number:- ";
-	cin>>*a;
-
-	cout<<"\n Enter value of second number:- ";
-	cin>>*b;

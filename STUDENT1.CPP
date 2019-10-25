@@ -20,3 +20,10 @@ system("pause");
  return 0;
  
 }
+fin.open("Records.txt", ios::in);
+for(int i=0; i<10; i++)
+ {
+ 
+ getline(fin,line,'.');
+ cout<<"\n"<<line;
+ }
