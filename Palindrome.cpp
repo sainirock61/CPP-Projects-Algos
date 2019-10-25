@@ -31,4 +31,16 @@ int i,length,flag = 0 ;
     }
 
        return 0;
+
+         if(flag)
+    {
+        cout<<"\n"<<string1<< " is not a palindrome\n";
+    }
+    else
+    {
+        cout<<"\n"<<string1<< " is a palindrome\n";
+    }
+
+       return 0;
 }
+
