@@ -27,4 +27,8 @@ if(count==0)
 }
 i=i+1;
 }
+ if(flag==0)
+  cout<<"1";
+ else
+  cout<<"0";
 }
