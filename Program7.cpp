@@ -76,3 +76,16 @@ break;
 }
 }
 
+cout<<"\n";
+i=1;
+while(i<=n)
+{
+sum=sum+(1.0)/i;
+i=i+1;
+}
+cout<<"Sum of "<<n<<" terms of series is="<<" "<<sum;
+break;
+
+
+}
+}
