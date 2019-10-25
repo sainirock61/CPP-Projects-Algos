@@ -1,15 +1,6 @@
 /*  WAP that prints a table indicating the number of occurences of each alphabet in the text entered as command line
        arguements.*/
- <section id="workshop" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title-header text-center">
-              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Workshops</h1>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Learn From Industry Experts</p>
-            </div>
-          </div>
-        </div>
+ 
         <div class="row">
           <div class="col-xs-12 col-md-6 col-lg-6">
             <div class="about-item">
