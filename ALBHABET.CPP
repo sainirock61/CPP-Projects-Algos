@@ -2,10 +2,7 @@
        arguements.*/
  
         <div class="row">
-          <div class="col-xs-12 col-md-6 col-lg-6">
-            <div class="about-item">
-              <img class="img-fluid" src="assets/img/about/img1.jpg" alt="">
-              <div class="about-text">
+          <
                 <h3><a href="#">Coding Ninja</a></h3>
                 <p>Lorem ipsum dolor sit amet, consectetuer commodo ligula eget dolor.<br>Lorem ipsum dolor sit amet, consectetuer commodo ligula eget dolor.</p>
               
@@ -14,7 +11,10 @@
           </div>
           <div class="col-xs-12 col-md-6 col-lg-6">
             <div class="about-item">
-              <img class="img-fluid" src="assets/img/about/img2.jpg" alt="">
+      div class="col-xs-12 col-md-6 col-lg-6">
+            <div class="about-item">
+              <img class="img-fluid" src="assets/img/about/img1.jpg" alt="">
+              <div class="about-text">        <img class="img-fluid" src="assets/img/about/img2.jpg" alt="">
               <div class="about-text">
                 <h3><a href="#">Andriod Development</a></h3>
                 <p>Lorem ipsum dolor sit amet, consectetuer commodo ligula eget dolor.<br>Lorem ipsum dolor sit amet, consectetuer commodo ligula eget dolor.</p>
