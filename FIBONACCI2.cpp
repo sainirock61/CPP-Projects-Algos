@@ -60,3 +60,12 @@ cout<<"\n====================================================================\n"
         return 0;
 
 }
+		    cout<<"ENTER THE NUMBER OF TERMS OF THE FIBONACCI SERIES :-- ";
+    while(!(cin>>n)|| (n<=0))
+        {
+            cin.clear();
+            cin.ignore(100,'\n');
+            cout<<"    !!!!!    INVALID INPUT. ENTER AGAIN :-- ";
+
+        }
+
