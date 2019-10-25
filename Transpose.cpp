@@ -25,7 +25,7 @@ cout<<"\nENTER THE NUMBER OF COLUMNS OF THE MATRIXs :-- ";
 	    cout<<"    !!!!!    INVALID INPUT. ENTER AGAIN :-- ";
         }
 
-cout<<"\n***********************************************************************************************";
+cout<<"\n********************************************************************";
 
 cout<<"\n ELEMENTS OF THE MATRIX ARE:-- \n";
     for(i=0;i<n;i++)
@@ -36,7 +36,7 @@ cout<<"\n ELEMENTS OF THE MATRIX ARE:-- \n";
                         cin>>num[i][j];
                     }
             }
-cout<<"\n***********************************************************************************************";
+cout<<"\n******************************************************************";
 
 cout<<"\nENTER THE ELEMENTS OF THE MATRIX ARE :-- \n";
     for(i=0;i<n;i++)
@@ -55,8 +55,8 @@ cout<<"\n                            ::::::::::::::::::::::::::::  Menu Driven P
         cout<<"                  _________________________________________________________________________________________________________          \n";
         cout<<"                 |***********************************************************************************************************|       \n";
         cout<<"                 |*                                                                                                         *|       \n";
-        cout<<"                 |*          1.TRANSPOSE OF THE GIVEN MATRIX        2.SUM OF THE DIAGONALS                                  *|       \n";
-        cout<<"                 |*                                                                                                         *|       \n";
+        cout<<"                 |*          1.TRANSPOSE OF THE GIVEN MATRIX                                 *|       \n";
+        cout<<"                 |*                                           2.SUM OF THE DIAGONALS                                                                       *|       \n";
         cout<<"                 |*          3.SUM OF ROWS AND COLUMNS                                                                      *|       \n";
         cout<<"                 |*_________________________________________________________________________________________________________*|        \n\n";
         cout<<"                     Choose the operation(1-3):-- ";cin>>a;
@@ -156,8 +156,7 @@ else if(a==3)
  else
  {
 
-            cin.clear();
-            cin.ignore(100,'\n');
+         
             cout<<"    !!!!!    INVALID INPUT. ENTER AGAIN :-- ";
 
  }

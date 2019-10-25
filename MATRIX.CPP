@@ -8,14 +8,14 @@ void bufferClr()
 }
 void drawline()
 {
-    cout<<"\n"<<setfill('-')<<setw(80)<<"-";
+    cout<<"\n"<<setfill('--')<<setw(80)<<"-";
     cout<<setfill(' ');
 }
 void swapvar(int &a,int &b)
 {
-    int t=a;
+    int x=a;
     a=b;
-    b=t;
+    b=x;
 }
 class Matrix
 {
@@ -163,6 +163,15 @@ int main()
     }
     drawline();
     cout<<"\t\t\t***T H A N K  Y O U***";
+    Matrix M1(row,col);
+     M1.printArr();
+               cout<<"\n\t\t\t   **---- MENU ----**"
+                <<"\n\t1->Addition"
+                <<"\n\t2->Subtraction"
+                <<"\n\t3->Multiplication"
+                <<"\n\t4->Transpose"
+                <<"\n\nEnter your choice:";
+            int choice;
     return 0;
 
 }

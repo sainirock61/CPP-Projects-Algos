@@ -81,16 +81,16 @@ int main()
 	person* p;  //use of pointer for runtime polymorphism
 	person p1;
 	p=&p1;  //p=address of person type object
-	cout<<"\n OBJECT OF PERSON CLASS: ";
+	cout<<"\n OBJECT OFP CLASS: ";
 	p->set();
 	p->print();
 	cout<<endl;
-	cout<<"\n OBJECT OF TEACHER CLASS: ";
+	cout<<"\n OBJECT OF TCLASS: ";
 	teacher t1;
 	p=&t1;  //p=address of teacher type object
 	p->set();
 	p->print();
-	cout<<endl;
+	cout<<"\n";
 	student s1;
 	p=&s1;  //p=address of student type object
 	cout<<"\n OBJECT OF STUDENT CLASS: ";
