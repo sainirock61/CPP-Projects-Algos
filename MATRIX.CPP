@@ -8,14 +8,14 @@ void bufferClr()
 }
 void drawline()
 {
-    cout<<"\n"<<setfill('-')<<setw(80)<<"-";
+    cout<<"\n"<<setfill('--')<<setw(80)<<"-";
     cout<<setfill(' ');
 }
 void swapvar(int &a,int &b)
 {
-    int t=a;
+    int x=a;
     a=b;
-    b=t;
+    b=x;
 }
 class Matrix
 {
@@ -28,6 +28,39 @@ public:
     }
 	var $marker_url = ( is_internetExplorer11 ) ? 'assets/img/location.png' : 'assets/img/location.png';
 		
+		
+		
+		        rows=0;
+        columns=0;
+    }
+	var $marker_url = ( is_internetExplorer11 ) ? 'assets/img/location.png' : 'assets/img/location.png';
+		
+		
+		
+		
+	//define the basic color of your map, plus a value for saturation and brightness
+	var	$main_color = '#2d313f',
+		$saturation= -20,        rows=0;
+        columns=0;
+    }
+	var $marker_url = ( is_internetExplorer11 ) ? 'assets/img/location.png' : 'assets/img/location.png';
+		
+		
+		
+		
+	//define the basic color of your map, plus a value for saturation and brightness
+	var	$main_color = '#2d313f',
+		$saturation= -20,        rows=0;
+        columns=0;
+    }
+	var $marker_url = ( is_internetExplorer11 ) ? 'assets/img/location.png' : 'assets/img/location.png';
+		
+		
+		
+		
+	//define the basic color of your map, plus a value for saturation and brightness
+	var	$main_color = '#2d313f',
+		$saturation= -20,
 	//define the basic color of your map, plus a value for saturation and brightness
 	var	$main_color = '#2d313f',
 		$saturation= -20,
@@ -163,6 +196,15 @@ int main()
     }
     drawline();
     cout<<"\t\t\t***T H A N K  Y O U***";
+    Matrix M1(row,col);
+     M1.printArr();
+               cout<<"\n\t\t\t   **---- MENU ----**"
+                <<"\n\t1->Addition"
+                <<"\n\t2->Subtraction"
+                <<"\n\t3->Multiplication"
+                <<"\n\t4->Transpose"
+                <<"\n\nEnter your choice:";
+            int choice;
     return 0;
 
 }

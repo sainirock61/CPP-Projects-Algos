@@ -14,7 +14,7 @@ cout<<"\nENTER THE SIZE OF SQUARE MATRIXs :-- ";
 	    cin.ignore(100,'\n');
 	    cout<<"    !!!!!    INVALID INPUT. ENTER AGAIN :-- ";
         }
-cout<<"\n***********************************************************************************************";
+cout<<"\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$";
 
 cout<<"\nENTER THE ELEMENTS OF THE  FIRST MATRIX :-- \n";
     for(i=0;i<n;i++)
