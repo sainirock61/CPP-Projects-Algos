@@ -1,13 +1,20 @@
 /*  WAP that prints a table indicating the number of occurences of each alphabet in the text entered as command line
        arguements.*/
- 
-        <div class="row">
+
+          <
+                <h3><a href="#">Coding Ninja</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer commodo ligula eget dolor.<br>Lorem ipsum dolor sit amet, consectetuer commodo ligula eget dolor.</p>
+              
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-6">
+
           <div class="col-xs-12 col-md-6 col-lg-6">
             <div class="about-item">
               <img class="img-fluid" src="assets/img/about/img1.jpg" alt="">
               <div class="about-text">
-         class="about-item">
-              <img class="img-fluid" src="assets/img/about/img2.jpg" alt="">
+
               <div class="about-text">
                 <h3><a href="#">Andriod Development</a></h3>
                 <p>Lorem ipsum dolor sit amet, consectetuer commodo ligula eget dolor.<br>Lorem ipsum dolor sit amet, consectetuer commodo ligula eget dolor.</p>
