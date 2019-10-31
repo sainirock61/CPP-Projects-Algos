@@ -1,10 +1,15 @@
 #include<iostream>
 using namespace std;
 
+void draw_line()
+{
+        cout<<"\t\t\t====================================================================\n";
+}
+
 int main()
 {
         cout<<"\n\t\t\t\tPROGRAM TO PRINT THE SUM OF ALL THE DIGITS OF A NUMBER \n";
-        cout<<"\t\t\t====================================================================\n";
+        draw_line();
 
 
     long int val , num , sum = 0;
@@ -28,6 +33,6 @@ int main()
 
     cout<<"\n\t\t\t\tTHE SUM OF THE DIGITS OF "<<val<<" is :- :"<<sum;
 
-cout<<"\n\n\t\t\t====================================================================\n\n\n\n";
+    draw_line();
 
 }
