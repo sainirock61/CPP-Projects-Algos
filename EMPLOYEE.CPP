@@ -20,7 +20,7 @@ int main()
         cerr<<"\aERROR 100 opening EMPLOYEE.DAT";
         exit(100);
     }
-    cout<<"\t\t\t  *** E M P L O Y E E  D A T A ***";
+    cout<<"\t\t\t E M P L O Y E E  D A T A ";
     drawline();
     char eID[5],name[10];
     int basic,hra,da,extra_allowance;
