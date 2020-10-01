@@ -39,16 +39,6 @@
               </div>
             </div>
           </div>
-		  <div class="col-xs-12 col-md-6 col-lg-6">
-            <div class="about-item">
-              <img class="img-fluid" src="assets/img/about/img3.jpg" alt="">
-              <div class="about-text">d
-                <h3><a href="#">Ethical Hacking</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer commodo ligula eget dolor.<br>Lorem ipsum dolor sit amet, consectetuer commodo ligula eget dolor.</p>
-              
-              </div>
-            </div>
-          </div>
 		  
         </div>
 		<br><br>
@@ -131,3 +121,16 @@ for(int i=0;i<str.length();i++)
     system("pause");
     return 0;
 }
+
+<div class="col-xs-12 col-md-6 col-lg-6">
+            <div class="about-item">
+              <img class="img-fluid" src="assets/img/about/img1.jpg" alt="">
+              <div class="about-text">
+
+              <div class="about-text">
+	      <div class="col-xs-12 col-md-6 col-lg-6">
+            <div class="about-item">
+              <img class="img-fluid" src="assets/img/about/img1.jpg" alt="">
+              <div class="about-text">
+
+              <div class="about-text">
