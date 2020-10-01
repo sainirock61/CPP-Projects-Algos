@@ -22,5 +22,18 @@ int main()
     getch();
     return 0;
 }
+
+
+cout << "Matrix after sorting the rows in descending order : \n";
+	    for (i = 0; i < n1; i++)
+	    {
+		for (j = 0; j < m1; j++)
+		{
+		    cout << a[i][j] << "\t";
+		}
+		cout << endl;
+	    }
+	    f = 1;
+	    break;
     
     
