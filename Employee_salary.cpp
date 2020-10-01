@@ -43,6 +43,18 @@ int main()
 	 obj.read((char*)&s[i],sizeof(s[i]));
 	 cout<<"\t "<<s[i].empid<<"\t"<<s[i].nm<<"\t"<<s[i].hra<<"\t"<<s[i].da<<"\t   "<<s[i].ext<<endl;
 	}
+	
+	cout<<"\n EMPLOYEE-"<<i+1<<":"<<endl;
+	 cout<<"Emp_id:";
+	 cin>>s[i].empid;
+	 cout<<"Name:";
+	 cin>>s[i].nm;
+	 cout<<"HRA:";
+	 cin>>s[i].hra;
+	 cout<<"DA:";
+	 cin>>s[i].da;
+	 cout<<"Extra:";
+	 cin>>s[i].ext;
 
  obj.close();
 
