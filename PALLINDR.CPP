@@ -114,5 +114,25 @@ int main()
 void palindrome(char []);
 int main()
 {
+	void palindrome(char a[20])
+{
+    char b[20];
+    char temp;
+    int i,l;
+    l=strlen(a);
+    strcpy(b,a);
+    for(i=0;i<l/2;i++)
+    {/* 5. Write a function that checks whether a given string is Palindrome or not.Use this function to find whether the
+      string entered by the user is Palindrome or not.*/
+	    void palindrome(char a[20])
+{
+    char b[20];
+    char temp;
+    int i,l;
+    l=strlen(a);
+    strcpy(b,a);
+    for(i=0;i<l/2;i++)
+    {/* 5. Write a function that checks whether a given string is Palindrome or not.Use this function to find whether the
+      string entered by the user is Palindrome or not.*/
 
     char n[20
