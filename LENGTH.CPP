@@ -27,7 +27,7 @@ public:
 int main()
 {
     drawline();
-    cout<<"\t\t\t **** OPERATIONS ON MATRIX CLASS ****";
+    cout<<"\t\t\tOPERATIONS ON MATRIX CLASS";
     drawline();
     int exit=0;
     while(exit==0)
