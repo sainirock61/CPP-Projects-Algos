@@ -10,9 +10,13 @@ int main()
  struct student s[10];
  int i,n;
 
-
-
- obj.open("data.txt",ios::out);
+ string filename = "data.txt";
+ 
+ cout << "Enter the output filename: ";
+ cin >> filename;
+ 
+ obj.open(filename,ios::out);
+ 
  cout<<"How many records to enter(max 10)"<<endl;
  cin>>n;
  for(i=0;i<n;i++)
@@ -33,8 +37,8 @@ int main()
 	}
  obj.close();
 
- obj.open("data.txt",ios::in);
- cout<<"\nAccessing from the file:\n "<<endl;
+ obj.open(filename,ios::in);
+ cout<<"\nAccessing from the file '" << filename << "':\n "<<endl;
  cout<<"\t| Emp_id\t|NAME\t|HRA\t|DA\t|Extra Allowances |\n\n";
 
  for(i=0;i<n;i++)
