@@ -62,4 +62,12 @@ class Stack
 			return node_info;		
 		}		
     }//pop()
+	
+	void printStack(){		//to print the stack
+		StackNode <T> *p = top;
+		while(p!=NULL){
+			cout << p->info << " ";
+			p = p->next;
+		}
+	}//printStack()
 };//End of Stack class
