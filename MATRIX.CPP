@@ -259,7 +259,7 @@ void Matrix::subtArr(Matrix toSubtract)
             elements[i][j]-=toSubtract.elements[i][j];
         }
     }
-    cout<<"\n\nResult Array\n";
+    cout<<"\n\nResult Array"<<endl;
     printArr();
 }
 void Matrix::multiArr(Matrix toMultiply)

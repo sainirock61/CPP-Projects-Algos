@@ -22,11 +22,11 @@ cout<<i<<"\n";
 }
 }
 }
-    
-while(!(cin>>n) || (n<=0))
-{
-    cin.clear();
-    cin.ignore(100,'\n');
-    cout<<"'INVALID INPUT! ENTER A POSITIVE NUMBER:"<<" ";
-}
+<div class="col-xs-12 col-md-6 col-lg-6">
+            <div class="about-item">
+              <img class="img-fluid" src="assets/img/about/img1.jpg" alt="">
+              <div class="about-text">
+
+              <div class="about-text">
+
     

@@ -24,7 +24,7 @@ cout<<"\n";
 cout<<"  Enter the number of which you want to find the factors="<<" ";
 while(!(cin>>n) || (n<=0))
 {
-    cout<<"'INVALID INPUT! ENTER A POSITIVE NUMBER:"<<" ";
+    cout<<"'INVALID INPUT! ENTER A REAL AND A POSITIVE NUMBER:"<<" ";
 }
 
 for(i=1;i<=n;i++)
@@ -44,7 +44,7 @@ while(!(cin>>n) || (n<=0))
 {
     cin.clear();
     cin.ignore(100,'\n');
-    cout<<"'INVALID INPUT! ENTER A POSITIVE NUMBER:"<<" ";
+    cout<<"'INVALID INPUT! ENTER A REAL AND A POSITIVE NUMBER:"<<" ";
 }
 
 for(i=1;i<=n;i++)

@@ -1,4 +1,11 @@
-#include<iostream>
+
+
+#include<iostream.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<stdio.h>
+#include<string.h>
+
 using namespace std;
 
 void bufferClr()
@@ -27,7 +34,7 @@ public:
 int main()
 {
     drawline();
-    cout<<"\t\t\t **** OPERATIONS ON MATRIX CLASS ****";
+    cout<<"\t\t\tOPERATIONS ON MATRIX CLASS";
     drawline();
     int exit=0;
     while(exit==0)

@@ -168,17 +168,7 @@ void main()
 		    }
 		}
 	    }
-	    cout << "Matrix after sorting the rows in descending order : \n";
-	    for (i = 0; i < n1; i++)
-	    {
-		for (j = 0; j < m1; j++)
-		{
-		    cout << a[i][j] << "\t";
-		}
-		cout << endl;
-	    }
-	    f = 1;
-	    break;
+	    
 	case 5:
 	    cout << "Thank You";
 	    f = 1;
@@ -189,5 +179,15 @@ void main()
 	}
 
     }
-
+cout << "Matrix after sorting the rows in descending order : \n";
+	    for (i = 0; i < n1; i++)
+	    {
+		for (j = 0; j < m1; j++)
+		{
+		    cout << a[i][j] << "\t";
+		}
+		cout << endl;
+	    }
+	    f = 1;
+	    break;
 }

@@ -1,13 +1,4 @@
-/* 16. Write a menu driven program to perform following operations on strings:
-      a) Show address of each character in a string
-      b) Concatenate two strings without using strcat function.
-      c) Concatenate two strings using strcat function.
-      d) Compare two strings
-      e) Calculate length of the string (use pointers)
-     f) Convert all lowercase characters to uppercase
-     g) Convert all uppercase characters to lowercase
-     h) Calculate number of vowels
-     i) Reverse the string     */
+
 
 
 #include<iostream>
@@ -110,7 +101,19 @@ void reverse()  //function to reverse the string
 		s[l-i]=temp;	
 	}
 }
-}; //class StringFunctions ends here
+
+void concat(char s[])  //to concatenate 2s trings without strcat()
+{
+	char s2[50];
+	cout<<"\n Enter second string: ";
+	cin>>s2;
+	int l=strlen(s);
+	for(int i=0;s2[i]!='\0';i++)
+		s[l++]=s2[i];
+	s[l]='\0';
+}
+
+
 
 int main()
 {
