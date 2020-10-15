@@ -5,7 +5,20 @@
 #include<string.h>
 using namespace std;
 
-void show_add(char s[])  //to print address of each character in the string
+class StringFunctions{
+public:
+char s[50];
+
+StringFunctions(){	//default constructor to initialise s
+	s = "";
+}
+	
+void getString()	//to get the string from user
+{
+	cin >> s;
+}
+	
+void show_add()  //to print address of each character in the string
 {
 	cout<<"\n Address of each character in the string: ";
 	for(int i=0;s[i]!='\0';i++)
@@ -13,7 +26,7 @@ void show_add(char s[])  //to print address of each character in the string
 		cout<<'\n'<<(void *)&s[i];
 	}
 }
-void concat(char s[])  //to concatenate 2s trings without strcat()
+void concat()  //to concatenate 2s trings without strcat()
 {
 	char s2[50];
 	cout<<"\n Enter second string: ";
@@ -23,14 +36,14 @@ void concat(char s[])  //to concatenate 2s trings without strcat()
 		s[l++]=s2[i];
 	s[l]='\0';
 }
-void concat_func(char s[]) // to concatenate 2 strings using strcat()
+void concat_func() // to concatenate 2 strings using strcat()
 {
 	char s2[50];
 	cout<<"\n Enter second string: ";
 	cin>>s2;
 	strcat(s,s2);
 }
-int compare(char s[])  //to compare 2 strings
+int compare()  //to compare 2 strings
 {
 	char s2[50];
 	cout<<"\n Enter second string: ";
@@ -38,7 +51,7 @@ int compare(char s[])  //to compare 2 strings
 	int result=strcmp(s,s2);
 	return result;
 }
-int length(char s[])  // to calculate length of string using pointers
+int length()  // to calculate length of string using pointers
 {
 	char* p=s;
 	int l=0;
@@ -49,7 +62,7 @@ int length(char s[])  // to calculate length of string using pointers
 	}
 	return l;	
 }
-void upper(char s[])  // function to convert lowercase characters to uppercase
+void upper()  // function to convert lowercase characters to uppercase
 {
 	for(int i=0;s[i]!='\0';i++)
 	{
@@ -57,7 +70,7 @@ void upper(char s[])  // function to convert lowercase characters to uppercase
 			s[i]=toupper(s[i]);
 	}
 }
-void lower(char s[])  // function to convert uppercase characters to lowercase
+void lower()  // function to convert uppercase characters to lowercase
 {
 	for(int i=0;s[i]!='\0';i++)
 	{
@@ -65,7 +78,7 @@ void lower(char s[])  // function to convert uppercase characters to lowercase
 			s[i]=tolower(s[i]);
 	}
 }
-int vowel_count(char s[])  //function to count number of vowels
+int vowel_count()  //function to count number of vowels
 {
 	int count=0;
 	for(int i=0;s[i]!='\0';i++)
@@ -76,7 +89,7 @@ int vowel_count(char s[])  //function to count number of vowels
 	}
 	return count;
 }
-void reverse(char s[])  //function to reverse the string
+void reverse()  //function to reverse the string
 {
 	int l=strlen(s);
 	l--;
@@ -101,14 +114,18 @@ void concat(char s[])  //to concatenate 2s trings without strcat()
 }
 
 
+
 int main()
 {
     system("color f3");
+	StringFunctions str;
+	
 	char ans='y';
 	int ch, result, size, vowel;
-	char s[50];
+	
 	cout<<"\n Enter a string: ";
-	cin>>s;
+	str.getString();
+	
 	do
 	{
 		system("cls");
@@ -126,15 +143,15 @@ int main()
 		cin>>ch;
 		switch(ch)
 		{
-			case 1:	show_add(s);
+			case 1:	str.show_add();
 					break;
-			case 2:	concat(s);
-					cout<<"\n Modified String: "<<s;
+			case 2:	str.concat();
+					cout<<"\n Modified String: "<<str.s;
 					break;
-			case 3: concat_func(s);
-					cout<<"\n Modified String: "<<s;
+			case 3: str.concat_func();
+					cout<<"\n Modified String: "<<str.s;
 					break;
-			case 4: result=compare(s);
+			case 4: result=str.compare();
 					if(result==0)
 						cout<<"\n Both strings are equal.";
 					else if(result<0)
@@ -142,20 +159,20 @@ int main()
 					else
 						cout<<"\n First string is greater than second string.";
 					break;
-			case 5: size=length(s);
+			case 5: size=str.length();
 					cout<<"\n Length of the string: "<<size;
 					break;
-			case 6:	upper(s);
-					cout<<"\n Modified String: "<<s;
+			case 6:	str.upper();
+					cout<<"\n Modified String: "<<str.s;
 					break;
-			case 7: lower(s);
-					cout<<"\n Modified String: "<<s;
+			case 7: str.lower();
+					cout<<"\n Modified String: "<<str.s;
 					break;
-			case 8: vowel=vowel_count(s);
+			case 8: vowel=str.vowel_count();
 					cout<<"\n Number of vowels in the string: "<<vowel;
 					break;
-			case 9: reverse(s);
-					cout<<"\n Reversed String: "<<s;
+			case 9: str.reverse();
+					cout<<"\n Reversed String: "<<str.s;
 					break;
 			default:cout<<"\n Invalid Choice. Try Again!";
 		}

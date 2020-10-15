@@ -62,7 +62,10 @@ class Stack
 			return node_info;		
 		}		
     }//pop()
-	
+
+  
+  
+	}//printStack()
 	T push()                  //to pop an element from the stack
     {
 		if( top == NULL )
@@ -77,4 +80,5 @@ class Stack
 			return node_info;		
 		}		
     }//pop()
+
 };//End of Stack class
