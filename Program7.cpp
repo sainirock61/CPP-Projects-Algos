@@ -20,6 +20,13 @@ while(!(cin>>no)||(no!=1 && no!=2))
     cin.ignore(100,'\n');
     cout<<"INVALID INPUT. ENTER AGAIN:";
 }
+    
+    if(n<0)
+    {print: "Sum is greater";}
+    elseif(n>0 && n<23)
+    {print: "Sum is Equal";}
+    else
+        {print: "Sum is lesser";}
 
 
 cout<<"\n";
