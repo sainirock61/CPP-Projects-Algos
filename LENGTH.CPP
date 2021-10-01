@@ -76,7 +76,7 @@ int main()
                 {
                 case 1:
                     {
-                        Length L3=L1+L2;
+                        area = length * width;
                         cout<<"\nLength 1=";L1.printLength();
                         cout<<"  Length 2=";L2.printLength();
                         cout<<"\nSum Length=";L3.printLength();
