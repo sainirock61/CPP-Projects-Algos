@@ -13,11 +13,11 @@ cout<<"           **                   **                       ***\n";
 cout<<"          ***                   ***                     *****\n";
 cout<<"         ****                   ****                   *******\n";
 cout<<"\n";
-cout<<"      4.    *                 5.    A                6.  A\n";
+cout<<"      4.   ***                5.    A                6.  A\n";
 cout<<"           ***                     AB                    AB\n";
 cout<<"          *****                   ABC                    ABC\n";
 cout<<"           ***                   ABCD                    ABCD\n";
-cout<<"            *            ";
+cout<<"           ***            ";
 cout<<"\n";
 cout<<"\n";
 cout<<" Enter the number of program which you want to print="<<" ";
@@ -101,10 +101,10 @@ cout<<" ";
 space=space+1;
 }
 star=1;
-while(star<=(2*i-1))
+while(star<=(2*i-3))
 {
 cout<<"*";
-star=star+1;
+star=star+2;            // Logic is updated
 }
 cout<<"\n";
 i=i+1;
