@@ -74,18 +74,6 @@ public:
 	var	$main_color = '#2d313f',
 		$saturation= -20,
 		$brightness= 5;
-
-	//we define here the style of the map
-	var style= [ 
-		{\
-    Matrix(int,int);
-    int elements[10][10];
-    void printArr();
-    void addArr(Matrix toAdd);
-    void subtArr(Matrix toSubtract);
-    void multiArr(Matrix toMultiply);
-    void transpose();
-};
 int main()
 {
     drawline();
@@ -197,15 +185,7 @@ int main()
     drawline();
     cout<<"\t\t\t***T H A N K  Y O U***";
     Matrix M1(row,col);
-     M1.printArr();
-               cout<<"\n\t\t\t   **---- MENU ----**"
-                <<"\n\t1->Addition"
-                <<"\n\t2->Subtraction"
-                <<"\n\t3->Multiplication"
-                <<"\n\t4->Transpose"
-                <<"\n\nEnter your choice:";
-            int choice;
-    return 0;
+
 
 }
 Matrix::Matrix(int x,int y)
