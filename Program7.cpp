@@ -62,6 +62,12 @@ while(!(cin>>n)||n<=0)
     cin.ignore(100,'\n');
     cout<<"INVALID INPUT! ENTER AGAIN";
 }
+        
+        if(sun!=0)
+        {
+            cout<<"Error in printing sum".
+        }
+        
 
 cout<<"\n";
 i=1;
