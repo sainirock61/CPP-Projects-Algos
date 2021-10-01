@@ -1,0 +1,10 @@
+-Ic:\MinGW\lib\gcc\mingw32\6.3.0\include\c++
+-Ic:\MinGW\lib\gcc\mingw32\6.3.0\include\c++\mingw32
+-Ic:\MinGW\lib\gcc\mingw32\6.3.0\include\c++\backward
+-Ic:\MinGW\lib\gcc\mingw32\6.3.0\include
+-Ic:\MinGW\include
+-Ic:\MinGW\lib\gcc\mingw32\6.3.0\include-fixed
+-Ic:\MinGW\mingw32\include
+-IC:\Users\anuj1\Documents\BankManganmentProjectC++\Sudoko
+-target
+i686-pc-windows-gnu
