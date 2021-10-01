@@ -21,14 +21,7 @@ int i,length,flag = 0 ;
                 break;
             }
         }
-    if(flag)
-    {
-        cout<<"\n"<<string1<< "-not a palindrome\n";
-    }
-    else
-    {
-        cout<<"\n"<<string1<< "- a palindrome\n";
-    }
+
 
        return 0;
 }
