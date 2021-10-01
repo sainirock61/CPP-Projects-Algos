@@ -1,28 +1,19 @@
-#include<iostream.h>
-#include<conio.h>
+#include <iostream>
+using namespace std;
 
-void main()
+int main()
 {
-	 clrscr();
+    int a = 5, b = 10, temp;
 
-	int *a,*b;
-	cout<<"\n Enter value of first number:- ";
-	cin>>*a;
+    cout << "Before swapping." << endl;
+    cout << "a = " << a << ", b = " << b << endl;
 
-	cout<<"\n Enter value of second number:- ";
-	cin>>*b;
+    temp = a;
+    a = b;
+    b = temp;
 
-	*a = *a + *b;
-	*b = *a - *b;
-	*a = *a - *b;
-	
-	/**temp=*a;
-	*a=*b;
-	*b=*temp;
-	*/
-    cout<<"\n\n_____________________________________________________________________________";
-	    cout<<"\n\t After swaping value or first number ="<<*a<<" and of b ="<<*b<<"\n";
-    cout<<"_____________________________________________________________________________";
+    cout << "\nAfter swapping." << endl;
+    cout << "a = " << a << ", b = " << b << endl;
 
-	getch();
+    return 0;
 }
