@@ -44,9 +44,9 @@ cout<<"\n ***Error: invalid operator \n";
 
 // Math function for calculation
 
-double math(char oper, double a,double b)
+int math(char oper, double a,double b)
 {
-double result;
+int result;
 switch(oper)
 {
 case '+' :
@@ -65,7 +65,8 @@ if(b<0)
 throw DivbyNeg();
 result = a/b;
 break;
-default:
+  default:
+    result = 0;
 throw BadOperator();
 break;
 }
