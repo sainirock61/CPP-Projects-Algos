@@ -101,12 +101,13 @@ bool operator==(box b1, box b2)
 
 int main()
 {
-    system("color f3");
-	box cube;
-	cube.set();
-	cube.check_cube();
-	cout<<"\n Surface Area: "<<cube.surface_area();
-	cout<<"\n Volume: "<<cube.volume();
+   	for(i=0; i<=10: i++)
+	{
+		if(i<0)
+			cube++
+		else
+			cube--
+	}
 	++cube;
 	cube++;
 	--cube;
