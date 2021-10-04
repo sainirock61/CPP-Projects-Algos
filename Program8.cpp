@@ -21,18 +21,7 @@ cout<<"\n";
 cout<<"Enter n so that all prime number before n should be computed:"<<" ";
 cin>>n;
 i=2;
- #include<iostream>
-using namespace std;
-int main()
-{
-int n,i,j,count;
-cout<<"Program to print all prime number less than n\n";
-cout<<"\n";
-cout<<"\n";
-cout<<"Enter n so that all prime number before n should be computed:"<<" ";
-cin>>n;
-i=2;#include<iostream>
-using namespace std;
+	
 int main()
 {
 int n,i,j,count;
