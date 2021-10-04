@@ -153,6 +153,7 @@ void deleterecord(){
  main(){
     int value;
     while(true){
+    cout<<"Select form Menu"<<endl;
     cout<<"Press 1 to enter data "<<endl;
     cout<<"Press 2 to show data"<<endl;
     cout<<"Press 3 to search data"<<endl;
