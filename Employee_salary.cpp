@@ -14,28 +14,7 @@ int main()
  
  cout << "Enter the output filename: ";
  cin >> filename;
- 
- obj.open(filename,ios::out);
- 
- cout<<"How many records to enter(max 10)"<<endl;
- cin>>n;
- for(i=0;i<n;i++)
-	{
-	 cout<<"\n EMPLOYEE-"<<i+1<<":"<<endl;
-	 cout<<"Emp_id:";
-	 cin>>s[i].empid;
-	 cout<<"Name:";
-	 cin>>s[i].nm;
-	 cout<<"HRA:";
-	 cin>>s[i].hra;
-	 cout<<"DA:";
-	 cin>>s[i].da;
-	 cout<<"Extra:";
-	 cin>>s[i].ext;
 
-	 obj.write((char*)&s[i],sizeof(s[i]));
-	}
- obj.close();
 
  obj.open(filename,ios::in);
  cout<<"\nAccessing from the file '" << filename << "':\n "<<endl;
