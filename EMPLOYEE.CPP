@@ -1,30 +1,50 @@
-#include<iostream>
-#include "Common.h"
-#include<fstream>
-#include<cstdlib>
+// C++ program of the above approach
+
+#include <bits/stdc++.h>
 using namespace std;
 
-
-int main()
+// Function to generate the array by
+// inserting array elements one by one
+// followed by reversing the array
+void generateArray(int arr[], int n)
 {
-    ifstream employeeData;
-    employeeData.open("EMPLOYEE.DAT");
-    if(!employeeData)
-    {
-        cerr<<"\aERROR 100 opening EMPLOYEE.DAT";
-        exit(100);
-    } //100 opening
-    cout<<"\t\t\t  *** E M P L O Y E E  D A T A ***";
-    drawline();
-    char eID[5],name[10];
-    int basic,hra,da,extra_allowance;
-    cout<<"\n\tE.ID    while(getEmp(employeeData,eID,name,basic,hra,da,extra_allowance))
-    { "<<"\tName"<<"\tBasic"<<"\tHRA"<<"\tDA"<<"\tExtra Allowance\n";
 
-        cout<<"\t"<<eID<<"\t"<<name<<"\t"<<basic<<"\t"<<hra<<"\t"<<da<<"\t"<<extra_allowance<<"\n";
+	// Doubly ended Queue
+	deque<int> ans;
 
-    }
-    employeeData.close();
-    return 0;
+	// Iterate over the array
+	for (int i = 0; i < n; i++) {
 
+		// Push array elements
+		// alternately to the front
+		// and back
+		if (i & 1)
+			ans.push_front(arr[i]);
+		else
+			ans.push_back(arr[i]);
+	}
+
+	// If size of list is odd
+	if (n & 1) {
+
+		// Reverse the list
+		reverse(ans.begin(),
+				ans.end());
+	}
+
+	// Print the elements
+	// of the array
+	for (auto x : ans) {
+		cout << x << " ";
+	}
+	cout << endl;
+}
+
+// Driver Code
+int32_t main()
+{
+	int n = 4;
+	int arr[n] = { 1, 2, 3, 4 };
+	generateArray(arr, n);
+	return 0;
 }
