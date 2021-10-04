@@ -43,11 +43,6 @@ int main(int argc,char *argv[])
     {
 }
 
-col-md-6 col-lg-6">
-            <div class="about-item">
-              <img class="img-fluid" src="assets/img/about/img2.jpg" alt="">
-              <div class="about-text">
-=======
 for(int i=0;i<str.length();i++)
     {
         if(str[i]>='A' && str[i]<='Z')
@@ -70,16 +65,3 @@ for(int i=0;i<str.length();i++)
     system("pause");
     return 0;
 }
-
-<div class="col-xs-12 col-md-6 col-lg-6">
-            <div class="about-item">
-              <img class="img-fluid" src="assets/img/about/img1.jpg" alt="">
-              <div class="about-text">
-
-              <div class="about-text">
-	      <div class="col-xs-12 col-md-6 col-lg-6">
-            <div class="about-item">
-              <img class="img-fluid" src="assets/img/about/img1.jpg" alt="">
-              <div class="about-text">
-
-              <div class="about-text">
