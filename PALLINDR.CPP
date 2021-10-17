@@ -1,153 +1,32 @@
-/* 5. Write a function that checks whether a given string is Palindrome or not.Use this function to find whether the
-      string entered by the user is Palindrome or not.*/
+/*  C++ program to Check whether a number is palindrome or not  */
 
+#include<iostream>
+using namespace std;
 
-#include<iostream.h>
-#include<conio.h>
-#include<stdlib.h>
-#include<stdio.h>
-#include<string.h>
-void palindrome(char []);
 int main()
 {
+    int a,no,b,temp=0;
 
-    char n[20];
-    cout<<"Enter a string";
-    gets(n);
-    palindrome(n);
-    getch();
-    return 0;
-}
-void palindrome(char a[20])
-{
-    char b[20];
-    char temp;
-    int i,l;
-    l=strlen(a);
-    strcpy(b,a);
-    for(i=0;i<l/2;i++)
-    {/* 5. Write a function that checks whether a given string is Palindrome or not.Use this function to find whether the
-      string entered by the user is Palindrome or not.*/
+    cout<<"Enter any positive number :: ";
+    cin>>no;
 
+    b=no;
 
-#include<iostream.h>
-#include<conio.h>
-#include<stdlib.h>
-#include<stdio.h>
-#include<string.h>
-void palindrome(char []);
-int main()
-{
-
-    char n[20];
-    cout<<"Enter a string";
-    gets(n);
-    palindrome(n);
-    getch();
-    return 0;
-}
-void palindrome(char a[20])
-{
-    char b[20];
-    char temp;
-    int i,l;
-    l=strlen(a);
-    strcpy(b,a);
-    for(i=0;i<l/2;i++)
-    {/* 5. Write a function that checks whether a given string is Palindrome or not.Use this function to find whether the
-      string entered by the user is Palindrome or not.*/
-
-
-#include<iostream.h>
-#include<conio.h>
-#include<stdlib.h>
-#include<stdio.h>
-#include<string.h>
-void palindrome(char []);
-int main()
-{
-
-    char n[20];
-    cout<<"Enter a string";
-    gets(n);
-    palindrome(n);
-    getch();
-    return 0;
-}
-	    
-	    
-void palindrome(char a[20])
-{
-    char b[20];
-    char temp;
-    int i,l;
-    l=strlen(a);
-    strcpy(b,a);
-    for(i=0;i<l/2;i++)
+    while(no>0)
     {
-	temp=a[i];
-	a[i]=a[l-1];
-	a[l-1]=temp;
-	l--;
+        a=no%10;
+        no=no/10;
+        temp=temp*10+a;
     }
-    if(strcmp(a,b)!=0)
-    cout<<"String is not palindrome";
-    else
-    cout<<"String is palindrome";
-}
 
-
-#include<iostream.h>
-#include<conio.h>
-#include<stdlib.h>
-#include<stdio.h>
-#include<string.h>
-void palindrome(char []);
-int main()
-{
-
-    char n[20];
-	
-#include<iostream.h>
-#include<conio.h>
-#include<stdlib.h>
-#include<stdio.h>
-#include<string.h>
-void palindrome(char []);
-int main()
-{
-	void palindrome(char a[20])
-{
-    char b[20];
-    char temp;
-    int i,l;
-    l=strlen(a);
-    strcpy(b,a);
-    for(i=0;i<l/2;i++)
-    {/* 5. Write a function that checks whether a given string is Palindrome or not.Use this function to find whether the
-      string entered by the user is Palindrome or not.*/
-	    void palindrome(char a[20])
-{
-void palindrome(char a[20])
-{
-    char b[20];
-    char temp;
-    int i,l;
-    l=strlen(a);
-    strcpy(b,a);
-    for(i=0;i<l/2;i++)
+    if(temp==b)
     {
-	temp=a[i];
-	a[i]=a[l-1];
-	a[l-1]=temp;
-	l--;
+        cout<<"\nThe Number [ "<<b<<" ] is Palindrome.\n";
     }
-    if(strcmp(a,b)!=0)
-    cout<<"String is not palindrome";
     else
-    cout<<"String is palindrome";
+    {
+        cout<<"\nThe Number [ "<<b<<" ] is Not Palindrome.\n";
+    }
+
+    return 0;
 }
-	   
-	   
-	   
-	   
