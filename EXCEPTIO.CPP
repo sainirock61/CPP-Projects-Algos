@@ -72,31 +72,3 @@ break;
 }
 return result;
 }
-
-void main()
-{
-clrscr();
-cout<<" Beginning of demonstration";
-cout<<endl;
-double num1,num2;
-char oper;
-cout<<"\n Enter the first operand";
-cin>>num1;
-cout<<"\n Enter the second operand";
-cin>>num2;
-cout<<"\n Enter the operator";
-cin>>oper;
-try
-{
-double result = math(oper,num1,num2);
-cout<<"result is : "<< result<<endl;
-}
-catch(Error&error)
-{
-error.printmessage();
-exit(0);
-}
-cout<<"\n End of Demonstration";
-
-getch();
-}
