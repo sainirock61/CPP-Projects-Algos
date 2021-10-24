@@ -6,15 +6,7 @@ int main()
 int n,even=0,odd=0;
 float i,sum=0;
 int no;
-    cout<<"menu";
-cout<<"Write a menu driven program to compute the sum of first n terms of the following series\n";
-cout<<"\n";
-cout<<"      1.1-2+3-4+5-6+7-8.....\n";
-cout<<"\n";
-cout<<"      2.1+1/2+1/3+1/4+1/5....\n";
-cout<<"\n";
-cout<<"    Enter the number(1or2) so that the sum of which program compute first:"<<" ";
-while(!(cin>>no)||(no!=1 && no!=2))
+
 {
     cin.clear();
     cin.ignore(100,'\n');
