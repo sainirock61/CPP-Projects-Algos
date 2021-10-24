@@ -179,11 +179,6 @@ PrintHospitalData(hospitals);
         string doctor_Name[]={"D1","D4","D3","D2"};
         int price[]={100,200,100,290};
         
-        HospitalManagement(
-        patient_Name,patient_Id,patient_Contact,
-        bookingCost,hospital_Name,location,beds,
-        ratings,hospitals_Contact,doctor_Name,price);
-        return 0;
         
         
     }
