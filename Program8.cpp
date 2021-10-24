@@ -1,17 +1,6 @@
 #include<iostream>
 using namespace std;
 
-void concat(char s[])  //to concatenate 2s trings without strcat()
-{
-	char s2[50];
-	cout<<"\n Enter second string: ";
-	cin>>s2;
-	int l=strlen(s);
-	for(int i=0;s2[i]!='\0';i++)
-		s[l++]=s2[i];
-	s[l]='\0';
-}
-
 int main()
 {
 int n,i,j,count;
