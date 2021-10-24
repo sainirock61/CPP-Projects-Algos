@@ -20,7 +20,7 @@ int main()
 
 
     int n,r;
-hello:
+
     cout<<"ENTER (n) :- ";
         while(!(cin>>n)|| (n<0))
         {
@@ -37,34 +37,4 @@ hello:
             cout<<"!!!!  INVALID INPUT   !!!! \n  ENTER r AGAIN:-- ";
         }
 
-    if(n>=r)
-    {
-        int a,b,c,d,x;
-     a = fact(n);
-     b = fact(r);
-     c = fact(n-r);
-
-
-
-     d = b*c;
-     x = a/d;
-
-    cout<<"\n\n";
-    cout<<"   |============================|\n";
-    cout<<"   |      "<<n<<"                     |\n";
-    cout<<"            C    =  "<<x<<"          \n";
-    cout<<"   |           "<<r  <<"                |\n";
-    cout<<"   |============================|\n";
-
-    }
-    else
-    {
-          cin.clear();
-	      cin.ignore(100,'\n');
-	      cout<<"\n  !!!!!!  INVALID INPUT   !!!!!!\n";
-	      cout<<" \n\n[n] must be greater than [r] \n\n";
-	      cout<<" $$   ENTER AGAIN   $$ :-- \n\n";
-
-	    goto hello;
-    }
 }
