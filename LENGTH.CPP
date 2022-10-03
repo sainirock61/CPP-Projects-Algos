@@ -79,20 +79,20 @@ int main()
                         cout<<"\nSum Length=";L3.printLength();
                         break;
                     }
-                case 2:
-                    if(L1.feet<L2.feet || (L1.feet==L2.feet && L1.inch<L2.inch))
-                    {
-                        cout<<"Subtraction Can't be performed as length 1 is smaller than length 2";
-                    }
-                    else
-                    {
+//                 case 2:
+//                     if(L1.feet<L2.feet || (L1.feet==L2.feet && L1.inch<L2.inch))
+//                     {
+//                         cout<<"Subtraction Can't be performed as length 1 is smaller than length 2";
+//                     }
+//                     else
+//                     {
 
-                        cout<<"\nLength 1=";L1.printLength();
-                        cout<<"  Length 2=";L2.printLength();
-                        Length L3=L1-L2;
-                        cout<<"\nDifference Length=";L3.printLength();
-                    }
-                    break;
+//                         cout<<"\nLength 1=";L1.printLength();
+//                         cout<<"  Length 2=";L2.printLength();
+//                         Length L3=L1-L2;
+//                         cout<<"\nDifference Length=";L3.printLength();
+//                     }
+//                     break;
                 }
         }
     }
@@ -140,8 +140,8 @@ Length Length::operator-(Length L2)
     Length L3;
     L3.feet=0;
     L3.inch=0;
-    L3.feet=feet-L2.feet;
-    L3.inch=inch-L2.inch;
+//     L3.feet=feet-L2.feet;
+//     L3.inch=inch-L2.inch;
     if(L3.inch<0)
     {
         L3.inch+=12;
