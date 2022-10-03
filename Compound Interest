@@ -21,3 +21,26 @@ int main()
 
     return 0;
 }
+
+
+// C# program to find compound
+// interest for given values
+using System;
+
+class GFG {
+
+	// Driver Code
+	public static void Main()
+	{
+		double principle = 10000, rate = 5, time = 2;
+
+		// Calculate compound interest
+		double A = principle * (Math.Pow((1 +
+					rate / 100), time));
+		double CI = A - principle;
+		
+		Console.Write("Compound Interest is "+ CI);
+	}
+}
+
+//This Code is Contributed by Sahil Rai.
