@@ -1,67 +1,43 @@
-#include<iostream>
+// C++ program to implement recursive Binary Search
+#include <bits/stdc++.h>
 using namespace std;
 
-int main()
+// A recursive binary search function. It returns
+// location of x in given array arr[l..r] is present,
+// otherwise -1
+int binarySearch(int arr[], int l, int r, int x)
 {
-    cout<<"BINARY SEARCH\n";
+	if (r >= l) {
+		int mid = l + (r - l) / 2;
 
+		// If the element is present at the middle
+		// itself
+		if (arr[mid] == x)
+			return mid;
 
+		// If element is smaller than mid, then
+		// it can only be present in left subarray
+		if (arr[mid] > x)
+			return binarySearch(arr, l, mid - 1, x);
 
+		// Else the element can only be present
+		// in right subarray
+		return binarySearch(arr, mid + 1, r, x);
+	}
 
-	int n,i,num[500],a,flag,m;
+	// We reach here when element is not
+	// present in array
+	return -1;
+}
 
-		cout<<"Enter the number of terms of array :--";
-
-
-	while(!(cin>>n)|| (n<0))
-        {
-            cin.clear();
-	    cin.ignore(100,'\n');
-	    cout<<"INVALID INPUT. ENTER AGAIN:";
-        }
-
-	cout<<"Enter the terms of Array : "<<endl;
-
-		for(i=0;i<n;i++)
-		   {
-		       cin>>num[i];
-		   }
-cout<<"\n";
-
-    cout<<"\n\nEnter the element you want to search :- ";
-    while(!(cin>>a)|| (a<0))
-        {
-            cin.clear();
-	    cin.ignore(100,'\n');
-	    cout<<"   INVALID INPUT. ENTER AGAIN  :-- ";
-        }
-int first=0;
-int last = n-1;
-int middle =(first+last)/2;
-
-cout<<"\n\n";
-
-    while(first<=last)
-        {
-            if (num[middle] < a)
-            {
-                first = middle + 1;
-            }
-            else if (num[middle] == a)
-            {
-                cout<< "               Element Found at Location "<<middle+1<<"\n";
-                break;
-            }
-            else
-            {
-                last =middle-1;
-            }
-            middle = (first + last)/2;
-        }
-        if(first > last)
-        {
-            cout<<"\n\n             NOT FOUND \n";
-
-        }
- cout<<"\n\n\n";
+int main(void)
+{
+	int arr[] = { 2, 3, 4, 10, 40 };
+	int x = 10;
+	int n = sizeof(arr) / sizeof(arr[0]);
+	int result = binarySearch(arr, 0, n - 1, x);
+	(result == -1)
+		? cout << "Element is not present in array"
+		: cout << "Element is present at index " << result;
+	return 0;
 }
